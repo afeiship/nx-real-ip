@@ -1,5 +1,7 @@
 require "open-uri"
 
+RE_IP_ADDRESS = /\b\d+\.\d+\.\d+\.\d+\b/
+
 module Nx
   class RealIp
     def self.get(args = { timeout: 5, proxy: nil })
@@ -10,7 +12,11 @@ module Nx
         proxy: args[:proxy],
       ).read
 
-      real_ip.strip
+      if RE_IP_ADDRESS.match? real_ip
+        real_ip.strip
+      else
+        nil
+      end
     end
   end
 end
