@@ -7,7 +7,7 @@
   },
   "scripts": {
     "clean": "rm -rf *.gem",
-    "build": "gem build nx-real-ip.gemspec",
+    "build": "gem build *.gemspec",
     "pubpush": "gem push *.gem"
   },
   "repository": {
