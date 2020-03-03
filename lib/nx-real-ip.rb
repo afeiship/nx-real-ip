@@ -1,2 +1,2 @@
-require "nx/version"
-require "nx/real-ip"
+require "./nx/version"
+require "./nx/real-ip"
