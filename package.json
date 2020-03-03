@@ -1,0 +1,24 @@
+{
+  "name": "nx-real-ip",
+  "version": "1.0.0",
+  "description": "> Get real ip address.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "clean": "rm -rf *.gem",
+    "build": "gem build nx-real-ip.gemspec",
+    "pubpush": "gem push *.gem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/nx-real-ip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afeiship/nx-real-ip/issues"
+  },
+  "homepage": "https://github.com/afeiship/nx-real-ip#readme"
+}

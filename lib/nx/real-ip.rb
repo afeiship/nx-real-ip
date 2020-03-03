@@ -2,7 +2,7 @@ require "open-uri"
 
 module Nx
   class RealIp
-    def get(args = { timeout: 5, proxy: nil })
+    def self.get(args = { timeout: 5, proxy: nil })
       real_ip = open(
         "http://icanhazip.com/",
         read_timeout: args[:timeout],
